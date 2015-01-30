@@ -1,0 +1,23 @@
+<div class="container">
+<br>
+<% unless session[:user].nil? %>
+Hi, <%= session[:user]%>
+<%end%>
+
+  <h1>Login if you already have an account!</h1>
+
+    <form action="/login" method="post"><br>
+      Username:   <input type="text" name="user[username]"><br><br>
+      Password:    <input type="password" name="user[password]"><br><br>
+      <input type="submit" value="SIGN IN"><br>
+    </form>
+    <br>
+
+    <a href="/signup">SIGN UP if you haven't!</a><br><br>
+    <a href= "/logout">LOG OUT to sign into a different account</a>
+  </div>
+
+
+
+</div>
+

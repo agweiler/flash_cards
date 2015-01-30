@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Congratulations on finishing the round!</h1>
+  <p>Total guesses: <%= guess.count %></p>
+  <p>Total correct: <%= correct_guess.count %></p>
+  <p>Score: <%= (correct_guess.count/guess.count)*100 %></p>
+
+  <h1>Results from previous rounds:  </h1>
+
+<!-- Need to grab all 'rounds' info for user_id == current_user.id -->
+
+
+
+</div>
+
+
+<a href= "/logout">LOG-OUT</a>

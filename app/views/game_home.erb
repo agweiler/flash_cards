@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Guess the capital city of the given Country</h1>
+  <p>Make sure to use the city's English name</p>
+
+  <h3>Country: </h3>
+  <%= @card = Card.find(rand (10)).country_name %>
+
+
+<form action="/game_home" method="post">
+  <input type="hidden" name="card[country_name]" value="<%= @card %>"><br>
+  <input type="text" name="card[capital_name]"><br><br>
+  <input type="submit" value="SUBMIT GUESS">
+</form>
+
+
+</div>
+
